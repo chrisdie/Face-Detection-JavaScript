@@ -31,7 +31,13 @@ function onNewWebsocketConnection(socket) {
   socket.on("hello", helloMsg => console.info(`Socket ${socket.id} says: "${helloMsg}"`));
 
   // will send a message only to this socket (different than using `io.emit()`, which would broadcast it)
-  socket.emit("welcome", nextVisitorNumber++);
+  
+
+  nextVisitorNumber++
+  if (nextVisitorNumber > 99) nextVisitorNumber = 0;
+    
+  
+  socket.emit("welcome", nextVisitorNumber);
 }
 
 function startServer() {
