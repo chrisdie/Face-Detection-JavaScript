@@ -6,7 +6,7 @@ express = require("express"),
 socketio = require("socket.io");
 const fs = require('fs');
 
-const SERVER_PORT = 3001;
+const SERVER_PORT = 3006;
 
 
 
