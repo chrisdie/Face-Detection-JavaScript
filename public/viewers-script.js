@@ -8,7 +8,8 @@ $(document).ready(function () {
       {type: "happy" , fill : "#ff0"},
       {type: "sad", fill: "#00f"}, 
       {type: "disgusted", fill: "#0f0"},
-      {type: "angry", fill: "#f00"}
+      {type: "angry", fill: "#f00"},
+      {type: "suprised", fill: "#fff"}
     ] 
 
     
