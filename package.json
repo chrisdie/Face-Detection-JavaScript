@@ -1,0 +1,24 @@
+{
+  "name": "face-detection-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "face-api.min.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon --inspect server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdie/Face-Detection-JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisdie/Face-Detection-JavaScript/issues"
+  },
+  "homepage": "https://github.com/chrisdie/Face-Detection-JavaScript#readme"
+}
