@@ -4,12 +4,14 @@ $(document).ready(function () {
 
 
     var types = [
+      {type: "empty", fill : "#000"}, 
       {type: "neutral", fill : "#444"}, 
       {type: "happy" , fill : "#ff0"},
       {type: "sad", fill: "#00f"}, 
       {type: "disgusted", fill: "#0f0"},
       {type: "angry", fill: "#f00"},
-      {type: "surprised", fill: "#fff"}
+      {type: "surprised", fill: "#fff"},
+      {type: "fearful", fill: "#f90"}
     ] 
 
     
@@ -104,7 +106,7 @@ $(document).ready(function () {
                 var idx = row*10 + column
                 var newtype = newdata[idx]
                 if (newtype === undefined){
-                  newtype = "neutral"
+                  newtype = "empty"
                 }
                 var typIdx = types.findIndex((typ) => typ.type === newtype)
                 data[row][column].type = types[typIdx]
